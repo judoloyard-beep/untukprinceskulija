@@ -86,9 +86,7 @@ const reasons = [
   "kehadiranmu membuat hari biasa terasa lebih berarti.",
   "kamu punya tempat spesial dalam ceritaku.",
   "aku suka ketika kita bisa tertawa bersama.",
-  "kamu mengajarkanku arti menghargai seseorang.",
   "aku senang bisa mengenal sisi-sisi kecil tentangmu.",
-  "kamu pantas mendapatkan cinta dan kebahagiaan.",
   "karena dari sekian banyak orang, aku bersyukur bertemu kamu."
 ];
 

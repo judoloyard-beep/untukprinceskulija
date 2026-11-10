@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090609">
+  <title>For My Princesskuu 🖤</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <main>
+    <!-- OPENING -->
+    <section class="screen active" id="opening">
+      <div class="small-label">A LITTLE SOMETHING FOR YOU</div>
+      <div class="heart-icon">♥</div>
+      <h1>hey, <span>princesskuu.</span></h1>
+      <p>i made something special.<br>just for you.</p>
+      <button class="primary-btn" id="openBtn">
+        open my heart <span>♡</span>
+      </button>
+      <div class="bottom-note">made with love, just for you.</div>
+    </section>
+
+    <!-- HOME -->
+    <section class="screen" id="home">
+      <div class="small-label">WELCOME TO MY LITTLE UNIVERSE</div>
+      <h1>for my<br><span>princesskuu.</span></h1>
+      <p class="subtitle">
+        di antara banyak hal indah di dunia,<br>
+        aku bersyukur bisa mengenal kamu.
+      </p>
+
+      <div class="menu">
+        <button class="menu-card" data-go="letter">
+          <span>01</span>
+          <div>
+            <strong>a letter for you</strong>
+            <small>something from my heart</small>
+          </div>
+          <b>↗</b>
+        </button>
+
+        <button class="menu-card" data-go="reasons">
+          <span>02</span>
+          <div>
+            <strong>why you?</strong>
+            <small>little reasons, endless feelings</small>
+          </div>
+          <b>↗</b>
+        </button>
+
+        <button class="menu-card" data-go="memories">
+          <span>03</span>
+          <div>
+            <strong>our little memories</strong>
+            <small>moments worth keeping</small>
+          </div>
+          <b>↗</b>
+        </button>
+
+        <button class="menu-card special" data-go="surprise">
+          <span>04</span>
+          <div>
+            <strong>a secret for you</strong>
+            <small>something you shouldn't miss</small>
+          </div>
+          <b>♡</b>
+        </button>
+      </div>
+      <div class="bottom-note">you are my favorite notification ♡</div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="screen" id="letter">
+      <button class="back-btn">← back</button>
+      <div class="small-label">CHAPTER 01 · FROM MY HEART</div>
+      <div class="letter-card">
+        <div class="letter-top">a letter, just for you ♡</div>
+        <h2>dear, <span>princesskuu.</span></h2>
+        <div id="letterText" class="letter-text"></div>
+        <div class="signature">with love, always. ♡</div>
+      </div>
+    </section>
+
+    <!-- REASONS -->
+    <section class="screen" id="reasons">
+      <button class="back-btn">← back</button>
+      <div class="small-label">CHAPTER 02 · LITTLE THINGS</div>
+      <h2>why <span>you?</span></h2>
+      <p class="subtitle">ada banyak alasan, ini beberapa di antaranya.</p>
+
+      <div class="reason-box">
+        <div class="reason-number" id="reasonNumber">01 / 10</div>
+        <div class="reason-heart">♥</div>
+        <h3 id="reasonText">senyummu selalu punya cara...</h3>
+        <button class="primary-btn" id="nextReason">next reason ♡</button>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="screen" id="memories">
+      <button class="back-btn">← back</button>
+      <div class="small-label">CHAPTER 03 · OUR STORY</div>
+      <h2>little <span>memories.</span></h2>
+      <p class="subtitle">beberapa momen yang ingin aku simpan.</p>
+
+      <div class="memory-grid">
+        <div class="memory-card">
+          <div class="memory-art">🌙</div>
+          <strong>the beginning</strong>
+          <small>awal dari cerita kita.</small>
+        </div>
+        <div class="memory-card">
+          <div class="memory-art">🌹</div>
+          <strong>your smile</strong>
+          <small>hal sederhana yang aku suka.</small>
+        </div>
+        <div class="memory-card">
+          <div class="memory-art">✨</div>
+          <strong>little moments</strong>
+          <small>hal kecil yang berarti.</small>
+        </div>
+        <div class="memory-card">
+          <div class="memory-art">🖤</div>
+          <strong>our story</strong>
+          <small>masih banyak cerita menanti.</small>
+        </div>
+      </div>
+      <p class="memory-hint">nanti ganti bagian ini dengan foto kalian ya ♡</p>
+    </section>
+
+    <!-- SURPRISE -->
+    <section class="screen" id="surprise">
+      <button class="back-btn">← back</button>
+      <div class="small-label">FINAL CHAPTER · A LITTLE SECRET</div>
+      <div class="surprise-heart">♡</div>
+      <h2>one last <span>thing...</span></h2>
+      <p class="subtitle">
+        ada satu pesan yang belum aku kasih tahu.
+      </p>
+
+      <button class="primary-btn" id="surpriseBtn">
+        reveal my secret ♡
+      </button>
+
+      <div class="secret-message" id="secretMessage">
+        <div class="secret-decoration">✦ ♥ ✦</div>
+        <h2>it's you.</h2>
+        <p>
+          dari sekian banyak kemungkinan,
+          aku senang salah satunya membawaku
+          bertemu kamu.
+
+          terima kasih sudah hadir dalam ceritaku,
+          princesskuu.
+
+          aku nggak tahu bagaimana hari-hari kita
+          ke depannya, tapi aku ingin terus
+          membuat kenangan indah bersamamu.
+
+          <strong>you are someone special to me. ♡</strong>
+        </p>
+        <div class="signature">— yours, with love.</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

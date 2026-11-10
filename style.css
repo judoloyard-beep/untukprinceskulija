@@ -440,3 +440,49 @@ p {
     max-width: 260px;
   }
 }
+
+.music-player {
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 15px;
+  border: 1px solid #a52b4655;
+  border-radius: 50px;
+  background: rgba(20, 8, 14, .94);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 5px 25px #0008;
+}
+
+.music-icon {
+  color: #e5a2b0;
+  font-size: 24px;
+}
+
+.music-info strong,
+.music-info small {
+  display: block;
+}
+
+.music-info strong {
+  font-size: 12px;
+}
+
+.music-info small {
+  font-size: 10px;
+  color: #9b858c;
+}
+
+#musicBtn {
+  background: #792037;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+

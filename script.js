@@ -186,3 +186,13 @@ musicBtn.addEventListener("click", async () => {
   }
 });
 
+document.getElementById("openBtn").addEventListener("click", async () => {
+  try {
+    await music.play();
+    musicBtn.textContent = "Ⅱ";
+  } catch (error) {
+    musicBtn.textContent = "▶";
+  }
+});
+
+

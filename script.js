@@ -159,3 +159,30 @@ function createHearts() {
     setTimeout(() => heart.remove(), 3100);
   }
 }
+
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+document.getElementById("openBtn").addEventListener("click", async () => {
+  try {
+    await music.play();
+    musicBtn.textContent = "Ⅱ";
+  } catch (error) {
+    musicBtn.textContent = "▶";
+  }
+});
+
+musicBtn.addEventListener("click", async () => {
+  if (music.paused) {
+    try {
+      await music.play();
+      musicBtn.textContent = "Ⅱ";
+    } catch (error) {
+      musicBtn.textContent = "▶";
+    }
+  } else {
+    music.pause();
+    musicBtn.textContent = "▶";
+  }
+});
+

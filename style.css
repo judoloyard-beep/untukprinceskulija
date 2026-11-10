@@ -391,3 +391,52 @@ p {
   h2 { font-size: 40px; }
   .memory-art { height: 90px; }
 }
+
+.photo-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.photo-card {
+  padding: 9px 9px 16px;
+  background: #eee4e3;
+  border-radius: 5px;
+  transform: rotate(-2deg);
+  box-shadow: 0 10px 30px #0008;
+  transition: .3s ease;
+}
+
+.photo-card:nth-child(even) {
+  transform: rotate(2deg);
+  margin-top: 25px;
+}
+
+.photo-card:hover {
+  transform: rotate(0) translateY(-5px);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.photo-card p {
+  color: #4b2932;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+@media (max-width: 350px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    max-width: 260px;
+  }
+}
